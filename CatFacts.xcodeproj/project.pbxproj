@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D020738D2B0A730D00C06C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020738C2B0A730D00C06C17 /* AppDelegate.swift */; };
-		D020738F2B0A730D00C06C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020738E2B0A730D00C06C17 /* SceneDelegate.swift */; };
-		D02073912B0A730D00C06C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073902B0A730D00C06C17 /* ViewController.swift */; };
-		D02073942B0A730D00C06C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02073922B0A730D00C06C17 /* Main.storyboard */; };
 		D02073962B0A730F00C06C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02073952B0A730F00C06C17 /* Assets.xcassets */; };
 		D02073992B0A730F00C06C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02073972B0A730F00C06C17 /* LaunchScreen.storyboard */; };
 		D02073A42B0A730F00C06C17 /* CatFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073A32B0A730F00C06C17 /* CatFactsTests.swift */; };
 		D02073AE2B0A730F00C06C17 /* CatFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073AD2B0A730F00C06C17 /* CatFactsUITests.swift */; };
 		D02073B02B0A730F00C06C17 /* CatFactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073AF2B0A730F00C06C17 /* CatFactsUITestsLaunchTests.swift */; };
+		D02073C02B0A73C900C06C17 /* CatFactAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073BF2B0A73C900C06C17 /* CatFactAPIManager.swift */; };
+		D02073C32B0A744100C06C17 /* CatFactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073C22B0A744100C06C17 /* CatFactViewModel.swift */; };
+		D02073C62B0A749800C06C17 /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073C52B0A749800C06C17 /* CatFact.swift */; };
+		D02073C92B0A75BD00C06C17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02073C82B0A75BD00C06C17 /* ContentView.swift */; };
+		D06C1C012B0B1351008E82E2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D06C1C002B0B1351008E82E2 /* Alamofire */; };
+		D06C1C032B0B146F008E82E2 /* CatFactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C1C022B0B146F008E82E2 /* CatFactResponse.swift */; };
+		D06C1C052B0B1494008E82E2 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C1C042B0B1494008E82E2 /* Link.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +42,6 @@
 /* Begin PBXFileReference section */
 		D02073892B0A730D00C06C17 /* CatFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D020738C2B0A730D00C06C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D020738E2B0A730D00C06C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D02073902B0A730D00C06C17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D02073932B0A730D00C06C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D02073952B0A730F00C06C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D02073982B0A730F00C06C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D020739A2B0A730F00C06C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,12 @@
 		D02073A92B0A730F00C06C17 /* CatFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02073AD2B0A730F00C06C17 /* CatFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsUITests.swift; sourceTree = "<group>"; };
 		D02073AF2B0A730F00C06C17 /* CatFactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D02073BF2B0A73C900C06C17 /* CatFactAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactAPIManager.swift; sourceTree = "<group>"; };
+		D02073C22B0A744100C06C17 /* CatFactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewModel.swift; sourceTree = "<group>"; };
+		D02073C52B0A749800C06C17 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		D02073C82B0A75BD00C06C17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D06C1C022B0B146F008E82E2 /* CatFactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactResponse.swift; sourceTree = "<group>"; };
+		D06C1C042B0B1494008E82E2 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06C1C012B0B1351008E82E2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +107,11 @@
 		D020738B2B0A730D00C06C17 /* CatFacts */ = {
 			isa = PBXGroup;
 			children = (
-				D020738C2B0A730D00C06C17 /* AppDelegate.swift */,
-				D020738E2B0A730D00C06C17 /* SceneDelegate.swift */,
-				D02073902B0A730D00C06C17 /* ViewController.swift */,
-				D02073922B0A730D00C06C17 /* Main.storyboard */,
+				D02073BC2B0A731A00C06C17 /* App */,
+				D02073C42B0A747A00C06C17 /* model */,
+				D02073C12B0A740400C06C17 /* ViewModel */,
+				D02073BE2B0A73AD00C06C17 /* API Manager */,
+				D02073C72B0A755F00C06C17 /* View */,
 				D02073952B0A730F00C06C17 /* Assets.xcassets */,
 				D02073972B0A730F00C06C17 /* LaunchScreen.storyboard */,
 				D020739A2B0A730F00C06C17 /* Info.plist */,
@@ -127,6 +136,48 @@
 			path = CatFactsUITests;
 			sourceTree = "<group>";
 		};
+		D02073BC2B0A731A00C06C17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D020738C2B0A730D00C06C17 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D02073BE2B0A73AD00C06C17 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D02073BF2B0A73C900C06C17 /* CatFactAPIManager.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		D02073C12B0A740400C06C17 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D02073C22B0A744100C06C17 /* CatFactViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D02073C42B0A747A00C06C17 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D02073C52B0A749800C06C17 /* CatFact.swift */,
+				D06C1C022B0B146F008E82E2 /* CatFactResponse.swift */,
+				D06C1C042B0B1494008E82E2 /* Link.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D02073C72B0A755F00C06C17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D02073C82B0A75BD00C06C17 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +194,9 @@
 			dependencies = (
 			);
 			name = CatFacts;
+			packageProductDependencies = (
+				D06C1C002B0B1351008E82E2 /* Alamofire */,
+			);
 			productName = CatFacts;
 			productReference = D02073892B0A730D00C06C17 /* CatFacts.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +269,9 @@
 				Base,
 			);
 			mainGroup = D02073802B0A730D00C06C17;
+			packageReferences = (
+				D06C1BFF2B0B1351008E82E2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D020738A2B0A730D00C06C17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +290,6 @@
 			files = (
 				D02073992B0A730F00C06C17 /* LaunchScreen.storyboard in Resources */,
 				D02073962B0A730F00C06C17 /* Assets.xcassets in Resources */,
-				D02073942B0A730D00C06C17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02073912B0A730D00C06C17 /* ViewController.swift in Sources */,
+				D02073C32B0A744100C06C17 /* CatFactViewModel.swift in Sources */,
+				D02073C62B0A749800C06C17 /* CatFact.swift in Sources */,
+				D06C1C052B0B1494008E82E2 /* Link.swift in Sources */,
+				D02073C92B0A75BD00C06C17 /* ContentView.swift in Sources */,
+				D06C1C032B0B146F008E82E2 /* CatFactResponse.swift in Sources */,
+				D02073C02B0A73C900C06C17 /* CatFactAPIManager.swift in Sources */,
 				D020738D2B0A730D00C06C17 /* AppDelegate.swift in Sources */,
-				D020738F2B0A730D00C06C17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +357,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D02073922B0A730D00C06C17 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D02073932B0A730D00C06C17 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D02073972B0A730F00C06C17 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +498,6 @@
 				INFOPLIST_FILE = CatFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +524,6 @@
 				INFOPLIST_FILE = CatFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D06C1BFF2B0B1351008E82E2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D06C1C002B0B1351008E82E2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D06C1BFF2B0B1351008E82E2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D02073812B0A730D00C06C17 /* Project object */;
 }
